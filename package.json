@@ -1,0 +1,35 @@
+{
+  "name": "css-charset-webpack-plugin",
+  "version": "1.0.0",
+  "description": "A Webpack and Rspack compatible plugin that ensures all emitted CSS files start with the correct @charset declaration.",
+  "main": "index.js",
+  "keywords": [
+    "webpack",
+    "rspack",
+    "plugin",
+    "css",
+    "charset",
+    "encoding"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenngoclongdev/css-charset-webpack-plugin.git"
+  },
+  "author": {
+    "name": "Nguyen Ngoc Long",
+    "email": "nguyenngoclong.dev@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyenngoclongdev/css-charset-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/nguyenngoclongdev/css-charset-webpack-plugin#readme",
+  "peerDependencies": {
+    "webpack": "^1 || ^2 || ^3 || ^4 || ^5"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-sources": "^3.2.3",
+    "eslint": "^8.0.0"
+  }
+}
