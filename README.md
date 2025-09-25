@@ -5,13 +5,6 @@ It ensures that every emitted CSS file starts with a proper `@charset` declarati
 
 Supports both **CommonJS (require)** and **ES Modules (import)** syntax.
 
-If you find this package useful for your projects, please consider supporting me by [Github](https://github.com/sponsors/nguyenngoclongdev), [Patreon](https://patreon.com/nguyenngoclong), [KO-FI](https://ko-fi.com/nguyenngoclong) or [Paypal](https://paypal.me/longnguyenngoc). It's a great way to help me maintain and improve this tool in the future. Your support is truly appreciated!
-
-[![Github](https://img.shields.io/badge/Github-F15689?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/nguyenngoclongdev)
-[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/nguyenngoclong)
-[![KO-FI](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/nguyenngoclong)
-[![Paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/longnguyenngoc)
-
 ---
 
 ## ✨ Features
@@ -39,7 +32,6 @@ module.exports = {
     plugins: [
         new CssCharsetPlugin({
             charset: 'utf-8',
-            insertMode: 'newline', // or "inline"
         })
     ]
 };
@@ -54,7 +46,6 @@ export default {
     plugins: [
         new CssCharsetPlugin({
             charset: 'utf-8',
-            insertMode: 'inline', // or "newline"
         })
     ]
 };
@@ -63,14 +54,6 @@ export default {
 ## 📝 Output Example
 
 After build, all CSS files will automatically include the @charset declaration at the top:
-
-With `insertMode: "inline"` (default)
-
-```cs
-@charset "utf-8";html{margin:0;padding:0;}
-```
-
-With `insertMode: "newline"`
 
 ```cs
 @charset "utf-8";
@@ -86,7 +69,6 @@ html {
 | Name       | Type     | Default  | Description                                                                                   |
 | ---------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | charset    | `string` | `utf-8`  | Character encoding to prepend. Usually set to `utf-8` for maximum compatibility.              |
-| insertMode | `string` | `inline` | Controls how the @charset is inserted: `inline` (same line) or `newline` (with a line break). |
 
 ## 📌 Note
 
