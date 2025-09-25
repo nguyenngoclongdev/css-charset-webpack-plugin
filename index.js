@@ -4,7 +4,6 @@ class CssCharsetWebpackPlugin {
     constructor(options = {}) {
         this.name = CssCharsetWebpackPlugin.name;
         this.charset = options.charset || 'utf-8';
-        this.insertMode = options.insertMode || 'inline'; // "newline" | "inline"
     }
 
     apply(compiler) {
@@ -57,11 +56,7 @@ class CssCharsetWebpackPlugin {
         const cleaned = css.replace(/@charset\s+["'][^"']+["'];?/gi, '');
         // If the file already starts with a valid @charset, return as is
         if (/^\s*@charset\s+["'][^"']+["'];/i.test(css)) return css;
-        if (this.insertMode === 'inline') {
-            return `@charset "${charset}";${cleaned}`;
-        } else {
-            return `@charset "${charset}";\n\n${cleaned}`;
-        }
+        return `@charset "${charset}";\n\n${cleaned}`;
     }
 }
 module.exports = CssCharsetWebpackPlugin;
