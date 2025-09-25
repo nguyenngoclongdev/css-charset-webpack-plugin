@@ -5,6 +5,12 @@ It ensures that every emitted CSS file starts with a proper `@charset` declarati
 
 Supports both **CommonJS (require)** and **ES Modules (import)** syntax.
 
+If you find this package useful for your projects, please consider supporting me by [Patreon](https://patreon.com/nguyenngoclong), [KO-FI](https://ko-fi.com/nguyenngoclong) or [Paypal](http://paypal.com/paypalme/longnguyenngoc). It's a great way to help me maintain and improve this tool in the future. Your support is truly appreciated!
+
+[![KO-FI](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/nguyenngoclong)
+[![Paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](http://paypal.com/paypalme/longnguyenngoc)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/nguyenngoclong)
+
 ---
 
 ## ✨ Features
