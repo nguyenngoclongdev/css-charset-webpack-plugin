@@ -1,17 +1,22 @@
 # css-charset-webpack-plugin
 
-**CssCharsetPlugin** is a plugin compatible with **Webpack 4/5** and **Rspack**.  
-It ensures that every emitted CSS file starts with a proper `@charset` declaration, improving character encoding compatibility across browsers.
+css-charset-webpack-plugin is a plugin that makes sure every generated CSS file starts with a valid `@charset` rule, so browsers can correctly detect the file’s character encoding (usually `utf-8`).
 
-Supports both **CommonJS (require)** and **ES Modules (import)** syntax.
+If you find this plugin useful for your projects, please consider supporting me by [Github](https://github.com/sponsors/nguyenngoclongdev), [Patreon](https://patreon.com/nguyenngoclong), [KO-FI](https://ko-fi.com/nguyenngoclong) or [Paypal](https://paypal.me/longnguyenngoc). It's a great way to help me maintain and improve this tool in the future. Your support is truly appreciated!
+
+[![Github](https://img.shields.io/badge/Github-F15689?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/nguyenngoclongdev)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/nguyenngoclong)
+[![KO-FI](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/nguyenngoclong)
+[![Paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/longnguyenngoc)
 
 ---
 
 ## ✨ Features
 
--   ✅ Works with Webpack 4, Webpack 5, and Rspack
--   ✅ Supports CommonJS and ES Modules
--   ✅ Automatically prepends `@charset` to the first line of every emitted `.css` file
+- ✅ Adds a valid `@charset` rule at the very top of every CSS file.
+- ✅ Removes any duplicate or misplaced `@charset` rules for spec compliance.
+- ✅ Works with Webpack 4, Webpack 5, and Rspack.
+- ✅ Supports both CommonJS and ES Modules.
 
 ---
 
