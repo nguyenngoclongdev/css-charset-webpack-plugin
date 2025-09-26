@@ -1,6 +1,6 @@
 {
   "name": "css-charset-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Webpack and Rspack compatible plugin that ensures all emitted CSS files start with the correct @charset declaration.",
   "main": "index.js",
   "keywords": [
