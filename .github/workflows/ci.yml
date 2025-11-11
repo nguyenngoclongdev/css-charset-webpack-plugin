@@ -13,6 +13,7 @@ jobs:
     permissions:
       contents: write # to create release (changesets/action)
       pull-requests: write # to create pull request (changesets/action)
+      id-token: write # npm provenance
     steps:
       - uses: actions/checkout@v3
         with:
